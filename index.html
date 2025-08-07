@@ -97,6 +97,49 @@
   }
 }
 
+    .hero-img {
+  position: relative;
+  display: inline-block;
+}
+
+.butterfly-emoji {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 2rem;
+  animation: butterflyFly 6s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes butterflyFly {
+  0% {
+    top: -30px;
+    left: 0%;
+    transform: rotate(0deg);
+  }
+  25% {
+    top: -50px;
+    left: 25%;
+    transform: rotate(20deg);
+  }
+  50% {
+    top: -20px;
+    left: 50%;
+    transform: rotate(-15deg);
+  }
+  75% {
+    top: -40px;
+    left: 75%;
+    transform: rotate(10deg);
+  }
+  100% {
+    top: -30px;
+    left: 100%;
+    transform: rotate(0deg);
+  }
+}
+
+
 
 
     .btn {
@@ -198,6 +241,7 @@
       <a href="https://www.linkedin.com/in/lakshmipriya-bala-230aa7377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn">Let's Connect</a>
     </div>
     <div class="hero-img">
+       <div class="butterfly-emoji">🦋</div>
       <img src="IMG_20250608_132653_173.jpg" alt="Developer" />
     </div>
   </main>
